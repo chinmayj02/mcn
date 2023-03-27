@@ -22,9 +22,9 @@ def mod2bindiv():
             else:
                 break
     if len(remainder)!=d-1:
-        if len(remainder)>d-1:
+        while len(remainder)>d-1:
             remainder.pop(0)
-        if len(remainder)<d-1:
+        while len(remainder)<d-1:
             remainder.insert(0,0)
     return remainder
 
@@ -94,5 +94,5 @@ else:
 
 # Has any bit in the message changed? [y/n]: n
 # Message received is: 11010110111110
-# Remainder is: 00
+# Remainder is: 0000
 # No Error
