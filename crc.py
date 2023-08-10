@@ -2,7 +2,7 @@ def mod2bindiv():
     remainder=[]
     for i in range(d):
         remainder.append(dividend.pop(0))
-    for i in range(m+d-5):
+    while True:
         if 1 not in remainder:
             break
         if len(remainder)<len(divisor):
